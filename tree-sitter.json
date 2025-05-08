@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "rgbasm",
+      "camelcase": "Rgbasm",
+      "title": "RGBASM",
+      "scope": "source.rgbasm",
+      "file-types": ["inc", "sm83", "asm", "z80", "s"],
+      "injection-regex": "^(?:rgbasm|asm)$",
+      "class-name": "TreeSitterRgbasm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MPL-2.0",
+    "description": "RGBDS assembly",
+    "authors": [
+      {
+        "name": "ISSOtm",
+        "email": "rgbds@eldred.fr",
+        "url": "https://eldred.fr/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/ISSOtm/tree-sitter-rgbds"
+    },
+    "namespace": "fr.eldred"
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
