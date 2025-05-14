@@ -103,7 +103,7 @@ module.exports = grammar({
         prec(1, seq(ident("sp"), optional(seq(/[+-]/, $.expression)))), // SP + offset
       ),
 
-    _directive: ($) =>
+    directive: ($) =>
       choice(
         $.macro_def,
         $.rept,
